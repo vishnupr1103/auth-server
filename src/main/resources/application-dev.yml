@@ -3,7 +3,10 @@ server:
   servlet:
     context-path: /auth-server
 
+
 spring:
+  active:
+    profile: dev
   application:
     name: auth-server
 
