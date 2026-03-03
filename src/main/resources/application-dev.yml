@@ -5,8 +5,9 @@ server:
 
 
 spring:
-  active:
-    profile: dev
+  profiles:
+    active: dev
+
   application:
     name: auth-server
 
