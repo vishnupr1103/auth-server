@@ -2,12 +2,6 @@ server:
   port: ${PORT:8080}
   servlet:
     context-path: /auth-server
-
-
-spring:
-  profiles:
-    active: dev
-
   application:
     name: auth-server
 
