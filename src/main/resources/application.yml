@@ -1,4 +1,5 @@
 server:
+  port: ${PORT}
   servlet:
     context-path: /auth-server
 
@@ -13,9 +14,9 @@ spring:
           public-key-location: classpath:keys/public.pem
 
   datasource:
-    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/task-manager}
-    username: ${JDBC_DATABASE_USERNAME:postgres}
-    password: ${JDBC_DATABASE_PASSWORD:postgres}
+    url: ${JDBC_DATABASE_URL:jdbc}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
     hikari:
       connection-timeout: 30000
       maximum-pool-size: 10
